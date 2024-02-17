@@ -1,11 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;=
-}
-
 :root{
   --orange: #FF6A00;
 
+}
+
+.mainhover{
+  cursor: pointer;
+  color: white;
+}
+.mainhover a{
+  
+  position: relative;
+}
+.mainhover a:hover {
+  color: var(--orange) !important;
+}
+
+.mainhover a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.mainhover a:hover::after{
+  width: 90%;
+  background-color: var(--orange);
 }

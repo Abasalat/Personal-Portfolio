@@ -1,10 +1,11 @@
+import Home from "./Components/Home";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
-      <h1>Port Folio</h1>
+      <Home />
     </>
   );
 }
