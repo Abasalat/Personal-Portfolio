@@ -1,5 +1,6 @@
 :root{
   --orange: #FF6A00;
+  --dark: #2d2d2a;
 
 }
 
@@ -30,4 +31,17 @@
 .mainhover a:hover::after{
   width: 90%;
   background-color: var(--orange);
+}
+
+.icon{
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }

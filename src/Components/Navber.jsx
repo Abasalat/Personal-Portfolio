@@ -1,11 +1,14 @@
 import React from "react";
-import { IoLogoLinkedin } from "react-icons/io";
+import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 const Navber = () => {
   return (
-    <div className="container-fluid bg-dark">
+    <div
+      className="container-fluid  fixed-top "
+      style={{ backgroundColor: "var(--dark)" }}
+    >
       <nav
         className="navbar navbar-expand-lg text-white"
         aria-label="Thirteenth navbar example"
@@ -15,10 +18,10 @@ const Navber = () => {
             className="collapse navbar-collapse d-lg-flex"
             id="navbarsExample11"
           >
-            <ul className="navbar-nav col-lg-5 justify-content-lg-evenly align-items-center ">
+            <ul className="navbar-nav col-lg-5 justify-content-lg-start align-items-center ">
               <li className="nav-item mainhover">
                 <a
-                  className="nav-link text-white active fs-4 me-3 "
+                  className="nav-link text-white active fs-4 me-5 "
                   aria-current="page"
                   href="#"
                 >
@@ -26,16 +29,16 @@ const Navber = () => {
                 </a>
               </li>
               <li className="nav-item mainhover">
-                <a className="nav-link text-white fs-4 me-3" href="#">
+                <a className="nav-link text-white fs-4 me-5" href="#">
                   Projects
                 </a>
               </li>
               <li className="nav-item mainhover">
-                <a className="nav-link text-white fs-4 me-3">Resume</a>
+                <a className="nav-link text-white fs-4 me-5">Resume</a>
               </li>
               <li className="nav-item mainhover">
                 <a
-                  className="nav-link text-white fs-4 me-3 "
+                  className="nav-link text-white fs-4 me-5 "
                   href="#"
                   aria-expanded="false"
                 >
@@ -44,7 +47,7 @@ const Navber = () => {
               </li>
             </ul>
             <a
-              className="navbar-brand col-lg-3 me-0 text-white text-center fs-1"
+              className="navbar-brand col-lg-3 me-0 text-white text-start fs-1"
               href="#"
             >
               Aba Salat
@@ -53,28 +56,18 @@ const Navber = () => {
               className="d-lg-flex col-lg-4 justify-content-lg-evenly align-items-center "
               style={{
                 backgroundColor: "var(--orange)",
-                marginBottom: "-10px",
+                marginBottom: "-8px",
                 marginTop: "-10px",
               }}
             >
-              <a
-                className=" mb-2"
-                style={{
-                  fontSize: "50px",
-                }}
-              >
-                <IoLogoLinkedin
-                  style={{
-                    fontSize: "50px",
-                    color: "white",
-                  }}
-                />
+              <a className=" mb-2 icon">
+                <FaLinkedinIn />
               </a>
               <a
-                className="mb-2"
+                className="mb-2 "
                 style={{
-                  fontSize: "50px",
-                  color: "white",
+                  fontSize: "65px",
+                  color: "black",
                 }}
               >
                 <IoLogoGithub />
@@ -82,17 +75,30 @@ const Navber = () => {
               <a
                 className="mb-2"
                 style={{
-                  fontSize: "50px",
-                  color: "white",
+                  color: "black",
+                  backgroundColor: "white",
+                  borderRadius: "50%",
+                  height: "3.5rem",
+                  width: "3.5rem",
+                  position: "relative",
+                  marginTop: "1rem",
                 }}
               >
-                <AiFillTwitterCircle />
+                <AiFillTwitterCircle
+                  style={{
+                    fontSize: "67px",
+                    position: "absolute",
+                    top: "-0.3rem",
+                    left: "-0.2rem",
+                    right: "-1rem",
+                    bottom: "-1.1rem",
+                  }}
+                />
               </a>
               <a
-                className="mb-2"
+                className="mb-2 icon"
                 style={{
-                  fontSize: "50px",
-                  color: "white",
+                  color: "var(--orange)",
                 }}
               >
                 <FaInstagramSquare />
