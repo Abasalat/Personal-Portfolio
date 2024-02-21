@@ -1,47 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+}
 :root{
   --orange: #FF6A00;
   --dark: #2d2d2a;
 
 }
 
-.mainhover{
-  cursor: pointer;
-  color: white;
-}
-.mainhover a{
-  
-  position: relative;
-}
-.mainhover a:hover {
-  color: var(--orange) !important;
-}
-
-.mainhover a::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0.5rem;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: width 0.3s ease;
-}
-
-.mainhover a:hover::after{
-  width: 90%;
-  background-color: var(--orange);
-}
-
-.icon{
-  font-size: 35px;
-  color: white;
-  background-color: black;
-  border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
+.App{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 6rem;
 }
