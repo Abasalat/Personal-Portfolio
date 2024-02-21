@@ -1,0 +1,154 @@
+.homecontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+}
+  
+  .main {
+    display: flex;    
+    padding-left: 50px;
+  }
+  
+  .left {
+    flex: 1;
+    margin-left: 5rem;      
+    font-family: Quicksand;
+    color: white;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+  
+  .left > :nth-child(1) {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .left > :nth-child(2) {
+    font-size: 50px;
+    margin-top: -1.5rem;
+  }
+  
+  .left > :nth-child(3) {
+    font-size: 75px;
+    color: var(--orange);
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .left > :nth-child(4){
+  font-size: 30px;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  }
+  
+  .viewresume{
+    background-color: var(--orange);
+    color: white;
+    font-size: 25px;
+    font-family: Quicksand;
+    font-weight: 600;
+    width: 70%;
+    padding: 15px 30px;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 2px 2px rgb(83, 82, 88); 
+    cursor: pointer;
+  }
+  .viewresume:hover {
+    box-shadow: 3px 3px 5px 3px rgb(83, 82, 88); /* Adjust the shadow as desired */
+  }
+  
+  /* After hover shadow */
+  .viewresume::after {
+    content: '';
+    position: absolute;
+    background-color: var(--orange);
+    z-index: -1; /* Ensure it's below the button */
+    border-radius: 1.5rem;
+    transition: opacity 0.3s, transform 0.3s; /* Adding transition for smooth effect */
+  }
+  
+  /* After hover effect */
+  .viewresume:hover::after {
+    opacity: 0.7; /* Adjust the opacity as desired */
+    transform: translate(5px, 5px); /* Adjust the position of the shadow */
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .imagecontainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--orange);
+    align-items: center;
+    height: 80vh;
+    width: 60%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right: 5rem;
+    top: -4rem;
+    overflow: hidden;
+    gap: 1rem;
+  }
+  
+  .img1 {
+    width: 115%;
+    height: 90%;
+    margin-right: 4.5rem;
+  }
+  
+  .iconcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--orange) ;
+    padding-top: 1rem;
+    gap: 3rem;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    
+  }
+  
+  .icon:last-child {
+    margin-right: 0;
+  }
+
+  .works{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+    font-family: Quicksand;
+  }
+
+  .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work>:nth-child(1){
+    font-size: 60px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .work>:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0rem;
+  }
