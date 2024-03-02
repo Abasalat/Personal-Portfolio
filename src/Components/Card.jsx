@@ -11,6 +11,8 @@ const Card = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <h1>Portfolio</h1>
+          <span className={styles.shadow}></span>
+          <span className={styles.shadow1}></span>
           <img src={card1} className={styles.image} />
           <div className={styles.iconmain}>
             <div className={styles.icon}>
@@ -22,6 +24,8 @@ const Card = () => {
         </div>
         <div className={styles.card}>
           <h1>Portfolio</h1>
+          <span className={styles.shadow}></span>
+          <span className={styles.shadow1}></span>
           <img src={card2} className={styles.image} />
           <div className={styles.iconmain}>
             <div className={styles.icon}>
@@ -33,6 +37,8 @@ const Card = () => {
         </div>
         <div className={styles.card}>
           <h1>Portfolio</h1>
+          <span className={styles.shadow}></span>
+          <span className={styles.shadow1}></span>
           <img src={card3} className={styles.image} />
           <div className={styles.iconmain}>
             <div className={styles.icon}>

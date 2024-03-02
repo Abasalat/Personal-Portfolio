@@ -2,6 +2,8 @@ import Home from "./Components/Home";
 import "./App.css";
 import About from "./Components/About";
 import Card from "./Components/Card";
+import Skills from "./Components/Skills";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Home />
       <About></About>
       <Card />
+      <Skills />
+      <Footer></Footer>
     </div>
   );
 }

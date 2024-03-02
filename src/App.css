@@ -6,6 +6,7 @@ body{
   background-color: var(--dark);
 }
 :root{
+  --skill: linear-gradient(to right, #FFA500, #FFD700);
   --orange: #FF6A00;
   --dark: #2d2d2a;
 
