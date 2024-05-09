@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.main{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-family: Quicksand;
+    font-size: 50px;
+}
+.wrapper{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.wrapper .circle{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  cursor: default;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: Quicksand;
+}
+.circle .box,
+ .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+ .circle .box span,
+.wrapper .card .text{
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+ .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.text{
+  font-size: 30px;
+  font-weight: 600;
+}
+

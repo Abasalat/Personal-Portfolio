@@ -16,7 +16,7 @@ const Home = () => {
         <div className={styles.left}>
           <p>Hello,</p>
           <h1>I am Aba Salat</h1>
-          <h1>Fronted-end web Developer</h1>
+          <h1>Front-end web Developer</h1>
           <p>transforming ideas into interactive digital experiences</p>
           <a className={styles.viewresume}>View Resume</a>
         </div>
