@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    font-family: Quicksand;
+    color: white;
+    gap: 1rem;
+}
+
+.text{
+    margin-top: 10rem;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.btn{
+    background-color: var(--orange);
+    color: white;
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: 500;
+    width: 200px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgb(83, 82, 88); 
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 5px 3px rgb(83, 82, 88); /* Adjust the shadow as desired */
+  }
+  
+  /* After hover shadow */
+  .btn::after {
+    content: '';
+    position: absolute;
+    background-color: var(--orange);
+    z-index: -1; /* Ensure it's below the button */
+    border-radius: 1.5rem;
+    transition: opacity 0.3s, transform 0.3s; /* Adding transition for smooth effect */
+  }
+  
+  /* After hover effect */
+  .btn:hover::after {
+    opacity: 0.7; /* Adjust the opacity as desired */
+    transform: translate(5px, 5px); /* Adjust the position of the shadow */
+  }
+
